@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 
 - [x] **The list displays a list of data fetched using an API call**
 - [x] **Data uses the useEffect React hook and async/await syntax**
-- [ ] **The app dashboard includes at least three summary statistics about the data such as**
+- [x] **The app dashboard includes at least three summary statistics about the data such as**
   - [x] *Total number of breweries in the API for United states.*
   - [x] *Number of breweries displayed per page*
   - [x] *Total Pages*
@@ -36,6 +36,8 @@ Here's a walkthrough of implemented user stories:
 <img src='https://imgur.com/a/zIdBfTu.gif' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
 https://imgur.com/a/zIdBfTu
+
+
 GIF created with ...  
 [ScreenToGif](https://www.screentogif.com/)
 
