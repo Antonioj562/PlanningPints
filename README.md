@@ -4,7 +4,7 @@ Submitted by: **Antoinio Loyola**
 
 This web app: **Don't know where to go out during the week? Look in your city or state to see brewery places you could visit. Webpage built with react and vite. API: https://www.openbrewerydb.org/breweries**
 
-Time spent: **13** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
@@ -33,18 +33,17 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/zIdBfTu.gif' title='Video Walkthrough' width='200' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
+https://imgur.com/a/zIdBfTu
 GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+[ScreenToGif](https://www.screentogif.com/)
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I had issues with appending to the API request link to accept more parameters. However, after thoroughly going through the documentation I was able to understand how to apply the correct parameters for the desired city and the desired state. While accessing the total API list available.
 
 ## License
 

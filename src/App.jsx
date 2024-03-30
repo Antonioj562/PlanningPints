@@ -8,9 +8,9 @@ import SearchCall from './components/SearchCall'
 const App = () => {
   const [list, setList] = useState([])
   const [totalItems, setTotalItems] = useState(0)
-  const [totalBrews] = useState(7973)
+  const [totalBrews] = useState(8251)
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(150);
+  const [totalPages, setTotalPages] = useState(166);
   const [searchInput, setSearchInput] = useState("");
   const [selectionInput, setSelectionInput] = useState("");
   const [isSearching, setIsSearching] = useState(false);
@@ -32,7 +32,7 @@ const App = () => {
     const fetchTotalPages = async () => {
       const response = await("https://api.openbrewerydb.org/v1/breweries");
       const totalCount = 50;
-      const totalPages = 165;
+      const totalPages = 166;
       setTotalPages(totalPages);
     };
     fetchTotalPages().catch(console.error);
