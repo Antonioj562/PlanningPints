@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import '../styles/searchCall.css';
 
 const SearchCall = ({onSearch}) => {
     const [city, setCity] = useState('');
@@ -13,12 +14,13 @@ const SearchCall = ({onSearch}) => {
     return(
         <div className="searchContainer">
             <input 
+                className='searchBox'
                 type='text'
                 placeholder='Enter a city..'
                 value={city}
                 onChange={handleInputChange}
             />
-            <button onClick={handleSearch}>Search</button>
+            <button className='searchBtn' onClick={handleSearch}>Search</button>
         </div>
     )
 }

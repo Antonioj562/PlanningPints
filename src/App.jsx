@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import BrewCall from './components/BrewCall'
 import BrewLogo from './assets/WalkingBeer.jpg'
 import PageCall from './components/PageCall'
 import SearchCall from './components/SearchCall'
+import { Link } from "react-router-dom";
 
 const App = () => {
   const [list, setList] = useState([])
   const [totalItems, setTotalItems] = useState(0)
   const [totalBrews] = useState(8251)
   const [currentPage, setCurrentPage] = useState(1);
+  const [id, setId] = useState("");
   const [totalPages, setTotalPages] = useState(166);
   const [searchInput, setSearchInput] = useState("");
   const [selectionInput, setSelectionInput] = useState("");
@@ -27,6 +28,7 @@ const App = () => {
 
     fetchBreweries().catch(console.error);
   }, [currentPage, searchInput, selectionInput]);
+
   /*API information from the docs*/ 
   useEffect(() => {
     const fetchTotalPages = async () => {
@@ -118,17 +120,17 @@ const App = () => {
       <h2>List of brews to travel to:</h2>
       <h3>Totel items: {totalItems}</h3>
       <ul className='listContainer'>
-        {list.map((brewery, index) => (
+        {list.map((brewery) => (
           <>
-            <ul className='listContainerItem' key={index}>
-            <BrewCall 
-              name={brewery.name} 
-              address_1={brewery.address_1} 
-              city={brewery.city} 
-              state_province={brewery.state_province} 
-              country={brewery.country} 
-              website_url={brewery.website_url}/>
+            <ul className='listItem'>
+            <Link
+                className='listContainerItem'
+                to={`/BrewCall/${brewery.id}`}
+                key={brewery.id}>
+                {brewery.name} <span className="tab">-</span> {brewery.state_province}
+            </Link>
             </ul>
+            
           </>
         ))}
     </ul>
@@ -143,5 +145,4 @@ const App = () => {
       </>
   )
 }
-
 export default App

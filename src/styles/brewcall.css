@@ -1,0 +1,9 @@
+.detailBrew{
+    background-color: #FFD457;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #292825;
+    padding: 10px;
+    width: 300px;
+}

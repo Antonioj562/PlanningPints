@@ -1,0 +1,12 @@
+.searchBtn{
+    border:1px solid #C3BBB7;
+    background: #c9a065;
+    border-radius: 10px;
+    width:75px;
+    margin-left: 20px;
+}
+
+.searchBox{
+    border-radius: 10px;
+    padding: 4px;
+}

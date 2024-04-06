@@ -17,14 +17,33 @@
 }
 
 .listContainer{
-
+  
 }
 
+.listItem{
+  margin-top: 30px;
+  margin-right: 65px;
+}
 .listContainerItem{
   background-color: #FFD457;
   border-radius: 10px;
   color: #292825;
-  margin-top: 15px;
   padding: 10px
   
+}
+
+nav {
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+}
+
+.home-link 
+{
+  border:1px solid #C3BBB7;
+  background: #c9a065;
+  border-radius: 10px;
+  color: #664A71;
+  width:75px;
+  margin-right: 20px;
 }
